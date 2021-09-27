@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Survey Form</title>
+</head>
+<body>
+  <div id="filter"></div>
+  <div id="content-wrapper">
+    <header>
+      <h1 id="title">Survey Form</h1>
+      <p id="description">This is a generic survey form.</p>
+    </header>
+
+    <main>
+      <div id="container">
+        <form action="" id="survey-form">
+          <div class="alphanumeric-entry">
+            <label for="name" id="name-label">
+              Name
+              <input type="text" id="name" placeholder="Enter your Name" required>
+            </label>
+            <label for="email" id="email-label">
+              Email
+              <input type="email" name="email" id="email" placeholder="Enter your Email" required>
+            </label>
+            <label for="age" id="age-label">
+              Age (optional)
+              <input type="number" name="age" id="age" placeholder="Age" min="1" max="100">
+            </label>
+          </div>
+
+          <label for="dropdown" class="alphanumeric-entry">Select an option:
+            <select name="dropdown" id="dropdown">
+              <option value="placeholder-1">Placeholder 1</option>
+              <option value="placeholder-2">Placeholder 2</option>
+              <option value="placeholder-3">Placeholder 3</option>
+              <option value="placeholder-4">Placeholder 4</option>
+            </select>
+          </label>
+
+          <label for="radio-group">Select an option:
+            <div id="radio-group">
+              <label for="option-1">
+                <input type="radio" name="radio-group" id="option-1" value="option-1" checked>
+                Option 1
+              </label>
+              <label for="option-2">
+                <input type="radio" name="radio-group" id="option-2" value="option-2">
+                Option 2
+              </label>
+              <label for="option-3">
+                <input type="radio" name="radio-group" id="option-3" value="option-3">
+                Option 3
+              </label>
+            </div>
+          </label>
+
+
+          <label for="checkbox-group">Select option(s):
+            <div id="checkbox-group">
+              <label for="checkbox-1">
+                <input type="checkbox" name="checkbox-group" id="checkbox-1" value="option-1"> Checkbox 1
+              </label>
+              <label for="checkbox-2">
+                <input type="checkbox" name="checkbox-group" id="checkbox-2" value="option-2"> Checkbox 2
+              </label>
+              <label for="checkbox-3">
+                <input type="checkbox" name="checkbox-group" id="checkbox-3" value="option-3"> Checkbox 3
+              </label>
+              <label for="checkbox-4">
+                <input type="checkbox" name="checkbox-group" id="checkbox-4" value="option-4"> Checkbox 4
+              </label>
+              <label for="checkbox-5">
+                <input type="checkbox" name="checkbox-group" id="checkbox-5" value="option-5"> Checkbox 5
+              </label>
+            </div>
+          </label>
+
+
+          <label for="additional-comments">Additional Comments:
+            <textarea id="additional-comments" placeholder="Enter your comments here..."></textarea>
+          </label>
+
+          <input type="submit" value="Submit" id="submit">
+        </form>
+      </div>
+    </main>
+  </div>
+
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>

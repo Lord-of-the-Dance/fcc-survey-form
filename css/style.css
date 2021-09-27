@@ -1,0 +1,112 @@
+/* Universal Styles */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+/* Tag Styles */
+
+h1 {
+  font-size: 3em;
+}
+
+header {
+  text-align: center;
+  text-shadow: 2px 2px 5px #000;
+}
+
+input, select, textarea {
+  width: 100%;
+  margin: 5px 0px;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  font-size: inherit;
+}
+
+input[type="radio"], input[type="checkbox"] {
+  width: auto;
+  margin-left: 3px;
+}
+
+label {
+  display: block;
+  margin-top: 20px;
+}
+
+/* Class Styles */
+
+.alphanumeric-entry input, .alphanumeric-entry select {
+  height: 40px;
+}
+
+/* ID Styles */
+
+#additional-comments {
+  resize: vertical;
+  height: 100px;
+}
+
+#checkbox-group label, #radio-group label {
+  margin: 0px;
+}
+
+#container {
+  width: 70%;
+  max-width: 900px;
+  margin: 20px auto;
+  background-color: #222d;
+  padding: 30px;
+  font-size: 1.05em;
+}
+
+#content-wrapper {
+  width: 100%;
+  padding: 30px;
+  color: #eee;
+}
+
+#filter {
+  background: linear-gradient(#fdd5, #fdd5), url('../img/office-bg.jpg') center center / cover no-repeat;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+
+#submit {
+  background-color: #25F;
+  color: inherit;
+  margin: 20px 0px;
+  height: 40px;
+}
+
+#submit:hover {
+  animation-name: submit-hover;
+  animation-duration: 0.2s;
+  animation-fill-mode: forwards;
+}
+
+#submit:active {
+  background-color: #03D;
+}
+
+/* Transitions & Animations */
+
+@keyframes submit-hover {
+  100% {
+    box-shadow: 0px 0px 3px 3px #fff;
+    font-size: 1em;
+  }
+}
+
+/* Media Queries */
+
+@media (max-width: 750px) {
+  #container {
+    width: 100%;
+  }
+}
